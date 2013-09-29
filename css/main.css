@@ -1,0 +1,477 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+@font-face {
+    font-family: 'Franchise';
+    src: url('../fonts/franchise-bold-webfont.eot');
+    src: url('../fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/franchise-bold-webfont.woff') format('woff'),
+         url('../fonts/franchise-bold-webfont.ttf') format('truetype'),
+         url('../fonts/franchise-bold-webfont.svg#Franchise') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #45291a;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    float: left;
+
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Franchise", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.full-center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.full-center-variabel {
+    display: table;
+    height: auto;
+    width: 100%;
+}
+
+.tekstblok *:last-child {
+    margin-bottom: 0;
+}
+
+.tekstblok *:first-child {
+    margin-top: 0;
+}
+
+.tekstblok p {
+    line-height: 1.4;
+}
+
+.omlaag-hint {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    background: url('../img/pijl_omlaag.png');
+    width: 23px;
+    height: 13px;
+    opacity: 0;
+}
+
+/* KLEUREN:
+ * Lichtblauw: #5fcbec
+ * Donkerblauw: #4999c3
+ * Beige: #dbd1bc
+ * Lichtbruin: #ab926d
+ * Donkerbruin: #45291a
+ */
+
+/* SLIDE 1 */
+#slide1 {
+    padding: 100px 0;
+    background: #c9dbe9;
+    background: linear-gradient(#c9dbe9, #fff);
+    overflow: hidden;
+    z-index: 4;
+}
+
+.wolk {
+    width: 200px;
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    position: relative;
+    z-index: 5;
+}
+
+.wolk:before, .wolk:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    border-radius: 100px;
+    transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.wolk:after {
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 15px;
+}
+
+.wolk1 {
+    animation: moveclouds 15s linear infinite;
+}
+
+.wolk2 {
+    left: 200px;
+    transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
+    animation: moveclouds 25s linear infinite;
+}
+
+.wolk3 {
+    left: -250px;
+    top: -200px;
+    transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    animation: moveclouds 20s linear infinite;
+}
+
+.wolk4 {
+    left: 470px;
+    top: -250px;
+    transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75;
+    animation: moveclouds 18s linear infinite;
+}
+
+.wolk5 {
+    left: -150px;
+    top: -150px;
+    transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    animation: moveclouds 20s linear infinite;
+}
+
+@keyframes moveclouds {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+#slide1 .titel {
+    opacity: 0;
+}
+
+#slide1 h1, #slide1 h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#slide1 h1 {
+    font-size: 125px;
+    line-height: 1;
+    color: #45291A;
+    background: linear-gradient(#AB926D, #45291A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#slide1 h2 {
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+
+
+/* SLIDE 2 */
+#slide2 {
+    background: #dbd1bc;
+    color: #fff;
+}
+
+#slide2 .tekstblok {
+    width: 20%;
+    position: absolute;
+    padding: 20px;
+    bottom: 5%;
+    left: 2%;
+    color: #45291a;
+    background: #5fcbec;
+    border-radius: 10px;
+    border: 5px solid #4999c3;
+    z-index: 10;
+}
+
+#slide2 .tekstblok h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+#slide2 .gras_boven {
+    background: #4A7023;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 6%;
+    z-index: 3;
+    transform: rotate(-1deg);
+}
+
+#slide2 .terrein {
+    background: url('../img/dirt_custom.png');
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 6%;
+    transform: rotate(-1deg);
+    z-index: 2;
+}
+
+#slide2 .weg_onder {
+    background: #4A7023;
+    position: absolute;
+    bottom: -6%;
+    left: 0;
+    right: 0;
+    width: 110%;
+    height: 30%;
+    z-index: 3;
+    transform: rotate(-2deg);
+    overflow: hidden;
+}
+
+
+
+/* SLIDE 3 */
+#slide3 {
+    background: url('../img/green_dust_scratch.png') repeat;
+    z-index: 10;
+}
+
+
+
+/* SLIDE 4 */
+@keyframes fadeInUpHigh {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#slide4 {
+    background: url('../img/concrete_wall.png') repeat;
+}
+
+#slide4 .titel {
+    opacity: 1;
+    animation: fadeInUpHigh 3s linear;
+}
+
+#slide4 h1 {
+    font-size: 125px;
+    line-height: 1;
+    color: #fff;
+    background: linear-gradient(#fff, #d9d9d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}

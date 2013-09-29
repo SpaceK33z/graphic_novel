@@ -1,0 +1,111 @@
+body, html, .main, section {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+	position: relative;
+	overflow: hidden;
+}
+
+@keyframes zagen {
+    0%   { left: 0%;  top: 20%;}
+	100% { left: 15%; top: 5%;}
+}
+
+.zaag {
+	position: relative;
+	top: 50%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	animation: zagen 3s linear infinite;
+	animation-direction: alternate;
+	transform: rotate(-10deg);
+}
+
+.zaag .handvat {
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 20px solid #E14F16;
+	border-radius: 10px 0 0 10px;
+	width: 20%;
+	height: 30%;
+	z-index: 21;
+}
+
+.zaag .blad {
+	background: #A7C2BD;
+	position: absolute;
+	left: 18.5%;
+	width: 80%;
+	height: 30%;
+	transform: skewX(10deg);
+	z-index: 20;
+}
+
+.zaag .blad .tanden {
+	position: absolute;
+	bottom: -3px;
+	left: 5px;
+	overflow: hidden;
+}
+
+.zaag .blad .tand {
+	float: left;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #A7C2BD;
+}
+
+.hout {
+	background: #ab926d;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	width: 200px;
+	height: 200px;
+	border: 10px solid #45291a;
+	border-radius: 200px;
+}
+
+@keyframes snipper-vallen {
+	0%   { top: 41%; left: 39%; }
+	10%   { top: 40%; left: 38%; }
+	20%   { top: 41%; left: 37%; }
+	30%   { top: 41%; left: 36%; }
+	30%   { top: 50%; left: 36%; }
+	100% { top: 110%; left: 36%; }
+}
+
+@keyframes snipper-vallen2 {
+	0%   { top: 41%; left: 39%; }
+	10%   { top: 39%; left: 38%; }
+	20%   { top: 41%; left: 37%; }
+	30%   { top: 41%; left: 35%; }
+	30%   { top: 50%; left: 35%; }
+	100% { top: 110%; left: 35%; }
+}
+
+
+.snipper, .snipper2 {
+	background: #ab926d;
+	position: absolute;
+	top: 41%;
+	left: 39%;
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	animation: snipper-vallen 2s 1s ease infinite;
+}
+
+.snipper2 {
+	animation: snipper-vallen2 2s 1.3s ease infinite;
+}
