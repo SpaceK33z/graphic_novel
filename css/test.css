@@ -51,9 +51,11 @@ body, html, .main, section {
 
 .zaag .blad .tanden {
 	position: absolute;
-	bottom: -3px;
+	bottom: -4px;
 	left: 5px;
 	overflow: hidden;
+	width: 99%;
+	height: 4px;
 }
 
 .zaag .blad .tand {
@@ -63,6 +65,7 @@ body, html, .main, section {
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-top: 4px solid #A7C2BD;
+	margin-bottom: 2px;
 }
 
 .hout {
@@ -77,21 +80,21 @@ body, html, .main, section {
 }
 
 @keyframes snipper-vallen {
-	0%   { top: 41%; left: 39%; }
+	0%    { opacity: 1; top: 41%; left: 39%; }
 	10%   { top: 40%; left: 38%; }
 	20%   { top: 41%; left: 37%; }
 	30%   { top: 41%; left: 36%; }
 	30%   { top: 50%; left: 36%; }
-	100% { top: 110%; left: 36%; }
+	100%  { top: 110%; left: 36%; }
 }
 
 @keyframes snipper-vallen2 {
-	0%   { top: 41%; left: 39%; }
+	0%    { opacity: 1; top: 41%; left: 39%; }
 	10%   { top: 39%; left: 38%; }
 	20%   { top: 41%; left: 37%; }
 	30%   { top: 41%; left: 35%; }
 	30%   { top: 50%; left: 35%; }
-	100% { top: 110%; left: 35%; }
+	100%  { top: 110%; left: 35%; }
 }
 
 
@@ -104,6 +107,7 @@ body, html, .main, section {
 	height: 5px;
 	border-radius: 5px;
 	animation: snipper-vallen 2s 1s ease infinite;
+	opacity: 0;
 }
 
 .snipper2 {
