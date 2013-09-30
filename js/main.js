@@ -40,7 +40,7 @@ $(function () {
     }
 
     function acties_slide2() {
-
+        $('#slide2 .gat').fadeIn(4000);
     }
 
     function acties_slide4() {

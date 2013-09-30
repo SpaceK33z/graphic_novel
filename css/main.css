@@ -142,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
  * Beige: #dbd1bc
  * Lichtbruin: #ab926d
  * Donkerbruin: #45291a
+ * Groen: #3DB13D;
  */
 
 /* SLIDE 1 */
@@ -265,26 +266,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-#slide2 .tekstblok {
-    width: 20%;
-    position: absolute;
-    padding: 20px;
-    bottom: 5%;
-    left: 2%;
-    color: #45291a;
-    background: #5fcbec;
-    border-radius: 10px;
-    border: 5px solid #4999c3;
-    z-index: 10;
-}
-
-#slide2 .tekstblok h2 {
-    font-size: 40px;
-    margin-bottom: 0;
-}
-
 #slide2 .gras_boven {
-    background: #4A7023;
+    background: #3DB13D;
     position: absolute;
     top: 0;
     left: 0;
@@ -303,20 +286,64 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     top: 6%;
     transform: rotate(-1deg);
-    z-index: 2;
+    z-index: 3;
 }
 
 #slide2 .weg_onder {
-    background: #4A7023;
+    background: #3DB13D;
     position: absolute;
     bottom: -6%;
     left: 0;
     right: 0;
     width: 110%;
     height: 30%;
-    z-index: 3;
+    z-index: 2;
     transform: rotate(-2deg);
     overflow: hidden;
+}
+
+#slide2 .gat {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: rgba(69, 41, 26, 0.8);
+    display: none;
+}
+
+#slide2 .gat_tl {
+    top: 8%;
+    left: 5%;
+}
+
+#slide2 .gat_tm {
+    top: 7.98%;
+    left: 46%;
+}
+
+#slide2 .gat_tr {
+    top: 8%;
+    right: 5%;
+}
+
+#slide2 .gat_ml {
+    top: 50%;
+    right: 5.1%;
+}
+
+#slide2 .gat_mr {
+    top: 50%;
+    left: 5%;
+}
+
+#slide2 .gat_bl {
+    bottom: 2%;
+    left: 5%;
+}
+
+#slide2 .gat_br {
+    bottom: 2%;
+    right: 5%;
 }
 
 
