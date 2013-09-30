@@ -328,12 +328,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #slide2 .gat_ml {
     top: 50%;
-    right: 5.1%;
+    left: 5%;
 }
 
 #slide2 .gat_mr {
     top: 50%;
-    left: 5%;
+    right: 5.1%;
 }
 
 #slide2 .gat_bl {

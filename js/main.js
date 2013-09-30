@@ -40,7 +40,21 @@ $(function () {
     }
 
     function acties_slide2() {
-        $('#slide2 .gat').fadeIn(4000);
+        $('#slide2 .gat_tl').fadeIn(2500, function() {
+            $('#slide2 .gat_tm').fadeIn(1000, function() {
+                $('#slide2 .gat_tr').fadeIn(1000, function() {
+                    $('#slide2 .gat_mr').fadeIn(1000, function() {
+                        $('#slide2 .gat_br').fadeIn(1000, function() {
+                            $('#slide2 .gat_bl').fadeIn(1000, function() {
+                                $('#slide2 .gat_ml').fadeIn(1000, function() {
+                                    // Klaar :).
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
     }
 
     function acties_slide4() {
