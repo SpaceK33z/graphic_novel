@@ -149,7 +149,8 @@ h1, h2, h3, h4, h5, h6 {
 #slide1 {
     padding: 100px 0;
     background: #c9dbe9;
-    background: linear-gradient(#c9dbe9, #fff);
+    /*background: linear-gradient(#c9dbe9, #fff);*/
+    background: linear-gradient(151deg, #a2e0f9 6%, #cef5fc 39%, #eafaeb 70%, #fefcd3 88%, #fdf4ba 100%);
     overflow: hidden;
     z-index: 4;
 }
