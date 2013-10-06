@@ -347,6 +347,21 @@ h1, h2, h3, h4, h5, h6 {
     right: 5%;
 }
 
+#slide2 .pad {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    height: 100%;
+}
+
+#slide2 .pad path {
+    fill: #3498db;
+    stroke: #3498db;
+}
+
 
 
 /* SLIDE 3 */

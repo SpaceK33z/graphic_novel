@@ -88,6 +88,16 @@ body, html, .main, section {
 	margin-bottom: 2px;
 }
 
+.zaag .blad .gat {
+	position: absolute;
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: 6px;
+	left: 639px;
+}
+
 @keyframes hout-vallen {
 	0%   { top: 30%; }
 	100% { top: 110%; left: 42%; }
