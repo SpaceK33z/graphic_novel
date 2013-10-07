@@ -17,19 +17,13 @@ body, html, .main, section {
 	100% { left: 15%; top: 22%;}
 }
 
-@keyframes zaag-weg {
-	0%   { left: 0%; top: 30%; }
-	100% { left: -80%; top: 27%; }
-}
-
 .zaag {
 	position: relative;
 	top: 30%;
 	left: 10%;
 	width: 80%;
 	height: 80%;
-	animation: zagen 3s linear infinite alternate,
-		zaag-weg 3s 13s linear 1;
+	animation: zagen 1s linear infinite alternate;
 	transform: rotate(-10deg);
 }
 
@@ -40,14 +34,35 @@ body, html, .main, section {
 	left: 0;
 	border: 25px solid #E14F16;
 	border-radius: 20px 0 0 20px;
-	width: 140px;
+	width: 100px;
 	height: 160px;
 	z-index: 21;
 }
 
+.zaag .handvat .schuin-binnenkant {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0px;
+	left: 49px;
+	border-left: 32px solid #fff;
+	border-bottom: 111px solid transparent;
+	z-index: 22;
+}
+
+.zaag .handvat .schuin-buitenkant {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -25px;
+	left: 74px;
+	border-left: 43px solid #E14F16;
+	border-bottom: 161px solid transparent;
+}
+
 .zaag .blad {
 	position: absolute;
-	left: 140px;
+	left: 100px;
 	width: 800px;
 	z-index: 20;
 }
