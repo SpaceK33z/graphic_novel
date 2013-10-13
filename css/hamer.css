@@ -12,52 +12,111 @@ body, html, .main, section {
 	min-width: 800px;
 }
 
+section {
+	background: linear-gradient(135deg, #b4ced8 17%, #d7e5d4 51%, #e2e8c9 72%, #f1e5b9 87%, #edd7ac 100%);
+}
+
+@keyframes spijker-1 {
+	0%   { bottom: 0px; }
+	100% { bottom: -80px; }
+}
+@keyframes spijker-2 {
+	0%   { bottom: -80px; }
+	100% { bottom: -180px; }
+}
+@keyframes spijker-3 {
+	0%   { bottom: -180px; }
+	100% { bottom: -263px; }
+}
+
 .spijker {
-	background: #A7C2BD;
+	background: linear-gradient(360deg, #1c2826 0%, #354643 100%);
 	width: 2%;
-	height: 30%;
+	height: 277px;
 	position: absolute;
 	bottom: 0;
 	left: 70%;
+	animation: spijker-1 200ms 1300ms linear 1 normal forwards,
+		spijker-2 200ms 2500ms linear 1 normal forwards,
+		spijker-3 200ms 3700ms linear 1 normal forwards;
 }
 
 .spijker .top {
-	background: #A7C2BD;
+	background: #354643;
 	width: 200%;
-	height: 5%;
+	height: 14px;
 	position: absolute;
 	top: 0;
 	left: -50%;
 }
 
+@keyframes timmeren-1 {
+	0%   {  bottom: 1000px; transform: rotate(-30deg); }
+	100% {  bottom: 197px; transform: rotate(-0deg); }
+}
+@keyframes timmeren-2 {
+	0%   {  bottom: 1000px; transform: rotate(-30deg); left: -5px; }
+	100% {  bottom: 97px; transform: rotate(-0deg); left: -5px; }
+}
+@keyframes timmeren-3 {
+	0%   {  bottom: 1000px; transform: rotate(-40deg); left: 5px; }
+	100% {  bottom: 14px; transform: rotate(-0deg); left: 5px; }
+}
+
 .hamer {
-	position: relative;
-	top: 30%;
-	width: 65%;
-	height: 50%;
+	position: absolute;
+	bottom: 277px;
+	width: 75%;
+	height: 400px;
+
+	animation: timmeren-1 400ms 1000ms linear 1 alternate forwards,
+		timmeren-2 500ms 2000ms linear 1 alternate forwards,
+		timmeren-3 500ms 3000ms linear 1 alternate forwards;
 }
 
 .hamer .steel {
 	position: absolute;
-	top: 40%;
-	width: 85%;
+	top: 45%;
+	width: 136%;
+	left: -40%;
 	height: 20%;
-	background: #ab926d;
+	background: linear-gradient(360deg, #9a8059 0%, #ab926d 40%, #b9a586 100%);
 	overflow: hidden;
 }
 
 .hamer .kop {
 	position: absolute;
 	right: 0;
-	width: 15%;
-	height: 100%;
+	width: 120px;
+	height: 400px;
 }
 
 .hamer .kop .sla-ding {
-	background: #A7C2BD;
+	background: linear-gradient(360deg, #8fb1ab 40%, #A7C2BD 100%);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 28%;
-	border-radius: 147px;
+	height: 70%;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
+
+.hamer .kop .driehoeken {
+	width: 0;
+	height: 0;
+	border-bottom: 117px solid #A7C2BD;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 75px solid transparent;
+	position: absolute;
+	bottom: 70%;
+}
+
+/*.hamer .kop .afkapping {
+	position: absolute;
+	bottom: 94%;
+	left: 26%;
+	background: ;
+	width: 50px;
+	height: 50px;
+}*/
