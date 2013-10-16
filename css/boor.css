@@ -162,7 +162,6 @@ section {
 	top: 31px;
 	width: 300px;
 	height: 20px;
-	/*border-radius: 20px/23px;*/
 	overflow: hidden;
 }
 
@@ -177,7 +176,7 @@ section {
 }
 
 .boortje .groef {
-	background: #535356;
+	background: linear-gradient(180deg, #6c6c70 0%, #535356 100%);
 	width: 5px;
 	height: 20px;
 	transform: skew(25deg);
@@ -194,10 +193,11 @@ section {
 	height: 0;
 	position: absolute;
 	left: 404px;
-	top: 31px;
+	top: 30px;
 	border-left: 10px solid #78787d;
-	border-bottom: 10px solid transparent;
-	border-top: 10px solid transparent;
+	border-bottom: 11px solid transparent;
+	border-top: 11px solid transparent;
+	border-radius: 12px;
 }
 
 
