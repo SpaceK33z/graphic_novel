@@ -1,0 +1,222 @@
+body, html, .main, section {
+	display: block;
+	position: static;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	position: relative;
+	overflow: hidden;
+	min-width: 800px;
+}
+
+section {
+	background: #fff;
+}
+
+.schuur {
+	width: 1100px;
+	height: auto;
+	margin: 20px auto 0 auto;
+	position: relative;
+}
+
+.schuur-hoek {
+	width: 0;
+	height: 0;
+	border-left: 691px solid transparent;
+	border-right: 320px solid transparent;
+	border-bottom: 161px solid #ab926d;
+	position: absolute;
+	left: 90px;
+}
+
+.schuur-onder {
+	background: #ab926d;
+	width: 1011px;
+	height: 320px;
+	position: absolute;
+	top: 161px;
+	left: 90px;
+	z-index: 1;
+}
+
+.plank {
+	width: 1000px;
+	border-bottom: 3px solid #45291a;
+	position: absolute;
+	border-radius: 10px 10px 0 0;
+}
+
+.plank1 {
+	width: 1009px;
+	bottom: -161px;
+	left: -690px;
+}
+
+.plank2 {
+	width: 751px;
+	bottom: -121px;
+	left: -513px;
+}
+
+.plank3 {
+	width: 502px;
+	bottom: -81px;
+	left: -342px;
+}
+
+.plank4 {
+	width: 253px;
+	bottom: -41px;
+	left: -172px;
+}
+
+/* DAK */
+.dak {
+	width: 1100px;
+	height: 350px;
+	position: absolute;
+	top: 161px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.dakplank {
+	background: #45291a;
+	width: 17px;
+	height: 350px;
+	margin-right: 107px;
+	float: left;
+	transform: rotate(15deg);
+}
+
+.dakplank1 {
+	margin-left: 45px;
+}
+
+.dakplank7 {
+	margin-right: 108px;
+}
+
+.dakplank8 {
+	margin-right: 0;
+}
+
+.panlat {
+	background: #5FBABF;
+	width: 1010px;
+	height: 10px;
+	margin-bottom: 50px;
+	position: relative;
+	left: 90px;
+	transform: skew(-15deg);
+}
+
+.panlat2 {
+	left: 74px;
+}
+
+.panlat3 {
+	left: 58px;
+}
+.panlat4 {
+	left: 42px;
+}
+.panlat5 {
+	left: 26px;
+}
+.panlat6 {
+	left: 10px;
+	margin-bottom: 19px;
+}
+
+.onderste-dakplank {
+	background: #45291a;
+	width: 1010px;
+	height: 17px;
+}
+
+/* Palen */
+.paal {
+	background: #dbd1bc;
+	width: 35px;
+	height: 350px;
+	position: absolute;
+	border-radius: 100px / 40px;
+	top: 504px;
+}
+
+.paal1 {
+	left: 20px;
+}
+
+.paal2 {
+	position: absolute;
+	right: 108px;
+}
+
+/* Pannen */
+.pannen {
+	position: absolute;
+	top: 804px;
+	right: 400px;
+	width: 80px;
+	height: 200px;
+}
+
+@keyframes pan-leggen1 {
+	0%   { transform: skew(-15deg) translate(0, 0); }
+	40%  { transform: skew(-15deg) translate(-40px, -370px); }
+	50%  { transform: skew(-15deg) translate(-40px, -370px); }
+	100% { transform: skew(-15deg) translate(-710px, -644px); }
+}
+
+.pan {
+	background: linear-gradient(90deg, #73301a 0%, #9C4124 100%);
+	border: 2px solid #491f11;
+	width: 50px;
+	height: 70px;
+	transform: skew(-15deg);
+	position: absolute;
+	top: 0;
+	animation-duration: 3.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.pan1 {
+	animation-name: pan-leggen1;
+	z-index: 20;
+}
+
+.pan2 {
+	top: 4px;
+	left: 4px;
+	z-index: 19;
+	animation-delay: 1s;
+}
+
+.pan3 {
+	top: 8px;
+	left: 8px;
+	z-index: 18;
+	animation-delay: 2s;
+}
+
+.pan4 {
+	top: 12px;
+	left: 12px;
+	z-index: 17;
+	animation-delay: 3s;
+}
+
+.pan5 {
+	top: 16px;
+	left: 16px;
+	z-index: 16;
+	animation-delay: 4s;
+}
