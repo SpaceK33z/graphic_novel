@@ -1,8 +1,6 @@
 body, html {
   margin: 0;
   overflow: hidden;
-  -webkit-transition: opacity 400ms;
-  -moz-transition: opacity 400ms;
   transition: opacity 400ms;
 }
 
@@ -20,6 +18,7 @@ body, .onepage-wrapper, html {
   display: block;
   position: relative;
   padding: 0;
+  -webkit-transform-style: preserve-3d;
 }
 
 .onepage-wrapper .section {
@@ -54,8 +53,6 @@ body, .onepage-wrapper, html {
   height: 4px;
   background: rgba(0,0,0,0.85);
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
 }
 
 .onepage-pagination li a.active:before{
