@@ -161,62 +161,189 @@ section {
 /* Pannen */
 .pannen {
 	position: absolute;
-	top: 804px;
-	right: 400px;
-	width: 80px;
+	top: 158px;
+	left: 68px;
+	width: 1050px;
 	height: 200px;
+	z-index: 30;
+	transform: skew(-15deg);
 }
 
-@keyframes pan-leggen1 {
-	0%   { transform: skew(-15deg) translate(0, 0); }
-	40%  { transform: skew(-15deg) translate(-40px, -370px); }
-	50%  { transform: skew(-15deg) translate(-40px, -370px); }
-	100% { transform: skew(-15deg) translate(-710px, -644px); }
+@keyframes pan-leggen-rij1 {
+	0%   { transform: translate(-710px, -644px); opacity: 1; }
+	40%  { transform: translate(-40px, -370px); }
+	50%  { transform: translate(-40px, -370px); }
+	100% { transform: translate(0, 0); opacity: 1; }
 }
+
+@keyframes pan-leggen-rij2 {
+	0%   { transform: translate(-710px, 0); opacity: 1; }
+	100% { transform: translate(0, 0); opacity: 1; }
+}
+
+@keyframes pan-leggen-rij3 {
+	0%   { transform: translate(710px, 0); opacity: 1; }
+	100% { transform: translate(0, 0); opacity: 1; }
+}
+
+@keyframes pan-leggen-rij4 {
+	0%   { transform: translate(-200px, -200px); opacity: 1; }
+	100% { transform: translate(0, 0); opacity: 1; }
+}
+
+@keyframes pan-leggen-rij5 {
+	0%   { transform: translate(400px, -200px); opacity: 1; }
+	100% { transform: translate(0, 0); opacity: 1; }
+}
+
 
 .pan {
 	background: linear-gradient(90deg, #73301a 0%, #9C4124 100%);
 	border: 2px solid #491f11;
 	width: 50px;
-	height: 70px;
-	transform: skew(-15deg);
-	position: absolute;
-	top: 0;
-	animation-duration: 3.5s;
+	height: 67px;
+	animation-duration: 1.3s;
 	animation-timing-function: linear;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+	animation-name: pan-leggen-rij1;
+	float: left;
+	margin: -2px 0 0 -2px;
+	opacity: 0;
 }
 
-.pan1 {
-	animation-name: pan-leggen1;
-	z-index: 20;
+.pan-rij2 {
+	background: linear-gradient(90deg, #83371e 0%, #ac4828 100%);
+	animation-name: pan-leggen-rij2;
+}
+.pan-rij3 {
+	background: linear-gradient(90deg, #9d4225 0%, #bc4e2b 100%);
+	animation-name: pan-leggen-rij3;
+}
+.pan-rij4 {
+	background: linear-gradient(90deg, #a34425 0%, #cc552f 100%);
+	animation-name: pan-leggen-rij4;
+}
+.pan-rij5 {
+	background: linear-gradient(90deg, #b34b28 0%, #d2613c 100%);
+	animation-name: pan-leggen-rij5;
+}
+.pan-rij6 {
+	background: linear-gradient(90deg, #c3512c 0%, #d66e4c 100%);
+	animation-name: pan-leggen-rij6;
 }
 
-.pan2 {
-	top: 4px;
-	left: 4px;
-	z-index: 19;
-	animation-delay: 1s;
-}
+/* Rij 1 */
+.pan-rij1.pan1 {  }
+.pan-rij1.pan2 { animation-delay: 200ms; }
+.pan-rij1.pan3 { animation-delay: 400ms; }
+.pan-rij1.pan4 { animation-delay: 600ms; }
+.pan-rij1.pan5 { animation-delay: 800ms; }
+.pan-rij1.pan6 { animation-delay: 1000ms; }
+.pan-rij1.pan7 { animation-delay: 1200ms; }
+.pan-rij1.pan8 { animation-delay: 1400ms; }
+.pan-rij1.pan9 { animation-delay: 1600ms; }
+.pan-rij1.pan10 { animation-delay: 1800ms; }
+.pan-rij1.pan11 { animation-delay: 2000ms; }
+.pan-rij1.pan12 { animation-delay: 2200ms; }
+.pan-rij1.pan13 { animation-delay: 2400ms; }
+.pan-rij1.pan14 { animation-delay: 2600ms; }
+.pan-rij1.pan15 { animation-delay: 2800ms; }
+.pan-rij1.pan16 { animation-delay: 3000ms; }
+.pan-rij1.pan17 { animation-delay: 3200ms; }
+.pan-rij1.pan18 { animation-delay: 3400ms; }
+.pan-rij1.pan19 { animation-delay: 3600ms; }
+.pan-rij1.pan20 { animation-delay: 3800ms; }
+.pan-rij1.pan21 { animation-delay: 4000ms; }
 
-.pan3 {
-	top: 8px;
-	left: 8px;
-	z-index: 18;
-	animation-delay: 2s;
-}
+/* Rij 2 */
+.pan-rij2.pan1 { animation-delay: 4400ms; }
+.pan-rij2.pan2 { animation-delay: 4500ms; }
+.pan-rij2.pan3 { animation-delay: 4600ms; }
+.pan-rij2.pan4 { animation-delay: 4700ms; }
+.pan-rij2.pan5 { animation-delay: 4800ms; }
+.pan-rij2.pan6 { animation-delay: 4900ms; }
+.pan-rij2.pan7 { animation-delay: 5000ms; }
+.pan-rij2.pan8 { animation-delay: 5100ms; }
+.pan-rij2.pan9 { animation-delay: 5200ms; }
+.pan-rij2.pan10 { animation-delay: 5300ms; }
+.pan-rij2.pan11 { animation-delay: 5400ms; }
+.pan-rij2.pan12 { animation-delay: 5500ms; }
+.pan-rij2.pan13 { animation-delay: 5600ms; }
+.pan-rij2.pan14 { animation-delay: 5700ms; }
+.pan-rij2.pan15 { animation-delay: 5800ms; }
+.pan-rij2.pan16 { animation-delay: 5900ms; }
+.pan-rij2.pan17 { animation-delay: 6000ms; }
+.pan-rij2.pan18 { animation-delay: 6100ms; }
+.pan-rij2.pan19 { animation-delay: 6200ms; }
+.pan-rij2.pan20 { animation-delay: 6300ms; }
+.pan-rij2.pan21 { animation-delay: 6400ms; }
 
-.pan4 {
-	top: 12px;
-	left: 12px;
-	z-index: 17;
-	animation-delay: 3s;
-}
+/* Rij 3 */
+.pan-rij3.pan1 { animation-delay: 6500ms; }
+.pan-rij3.pan2 { animation-delay: 6600ms; }
+.pan-rij3.pan3 { animation-delay: 6700ms; }
+.pan-rij3.pan4 { animation-delay: 6800ms; }
+.pan-rij3.pan5 { animation-delay: 6900ms; }
+.pan-rij3.pan6 { animation-delay: 7000ms; }
+.pan-rij3.pan7 { animation-delay: 7100ms; }
+.pan-rij3.pan8 { animation-delay: 7200ms; }
+.pan-rij3.pan9 { animation-delay: 7300ms; }
+.pan-rij3.pan10 { animation-delay: 7400ms; }
+.pan-rij3.pan11 { animation-delay: 7500ms; }
+.pan-rij3.pan12 { animation-delay: 7600ms; }
+.pan-rij3.pan13 { animation-delay: 7700ms; }
+.pan-rij3.pan14 { animation-delay: 7800ms; }
+.pan-rij3.pan15 { animation-delay: 7900ms; }
+.pan-rij3.pan16 { animation-delay: 8000ms; }
+.pan-rij3.pan17 { animation-delay: 8100ms; }
+.pan-rij3.pan18 { animation-delay: 8200ms; }
+.pan-rij3.pan19 { animation-delay: 8300ms; }
+.pan-rij3.pan20 { animation-delay: 8400ms; }
+.pan-rij3.pan21 { animation-delay: 8500ms; }
 
-.pan5 {
-	top: 16px;
-	left: 16px;
-	z-index: 16;
-	animation-delay: 4s;
-}
+/* Rij 4 */
+.pan-rij4.pan1 { animation-delay: 8600ms; }
+.pan-rij4.pan2 { animation-delay: 8700ms; }
+.pan-rij4.pan3 { animation-delay: 8800ms; }
+.pan-rij4.pan4 { animation-delay: 8900ms; }
+.pan-rij4.pan5 { animation-delay: 9000ms; }
+.pan-rij4.pan6 { animation-delay: 9100ms; }
+.pan-rij4.pan7 { animation-delay: 9200ms; }
+.pan-rij4.pan8 { animation-delay: 9300ms; }
+.pan-rij4.pan9 { animation-delay: 9400ms; }
+.pan-rij4.pan10 { animation-delay: 9500ms; }
+.pan-rij4.pan11 { animation-delay: 9600ms; }
+.pan-rij4.pan12 { animation-delay: 9700ms; }
+.pan-rij4.pan13 { animation-delay: 9800ms; }
+.pan-rij4.pan14 { animation-delay: 9900ms; }
+.pan-rij4.pan15 { animation-delay: 10000ms; }
+.pan-rij4.pan16 { animation-delay: 10100ms; }
+.pan-rij4.pan17 { animation-delay: 10200ms; }
+.pan-rij4.pan18 { animation-delay: 10300ms; }
+.pan-rij4.pan19 { animation-delay: 10400ms; }
+.pan-rij4.pan20 { animation-delay: 10500ms; }
+.pan-rij4.pan21 { animation-delay: 10600ms; }
+
+/* Rij 5 */
+.pan-rij5.pan1 { animation-delay: 10700ms; }
+.pan-rij5.pan2 { animation-delay: 10800ms; }
+.pan-rij5.pan3 { animation-delay: 10900ms; }
+.pan-rij5.pan4 { animation-delay: 11000ms; }
+.pan-rij5.pan5 { animation-delay: 11100ms; }
+.pan-rij5.pan6 { animation-delay: 11200ms; }
+.pan-rij5.pan7 { animation-delay: 11300ms; }
+.pan-rij5.pan8 { animation-delay: 11400ms; }
+.pan-rij5.pan9 { animation-delay: 11500ms; }
+.pan-rij5.pan10 { animation-delay: 11600ms; }
+.pan-rij5.pan11 { animation-delay: 11700ms; }
+.pan-rij5.pan12 { animation-delay: 11800ms; }
+.pan-rij5.pan13 { animation-delay: 11900ms; }
+.pan-rij5.pan14 { animation-delay: 12000ms; }
+.pan-rij5.pan15 { animation-delay: 12100ms; }
+.pan-rij5.pan16 { animation-delay: 12200ms; }
+.pan-rij5.pan17 { animation-delay: 12300ms; }
+.pan-rij5.pan18 { animation-delay: 12400ms; }
+.pan-rij5.pan19 { animation-delay: 12500ms; }
+.pan-rij5.pan20 { animation-delay: 12600ms; }
+.pan-rij5.pan21 { animation-delay: 12700ms; }
