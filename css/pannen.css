@@ -34,7 +34,7 @@ section {
 }
 
 .schuur-onder {
-	background: #ab926d;
+	background: linear-gradient(-90deg, #ab926d 0%, #beaa8d 100%);
 	width: 1011px;
 	height: 320px;
 	position: absolute;
@@ -85,12 +85,13 @@ section {
 }
 
 .dakplank {
-	background: #45291a;
+	background: linear-gradient(-90deg, #45291a 0%, #613a25 100%);
 	width: 17px;
 	height: 350px;
 	margin-right: 107px;
 	float: left;
 	transform: rotate(15deg);
+	box-shadow: 1px -1px 10px 1px rgba(0, 0, 0, .4);
 }
 
 .dakplank1 {
@@ -106,7 +107,7 @@ section {
 }
 
 .panlat {
-	background: #5FBABF;
+	background: linear-gradient(180deg, #5FBABF 0%, #3b9094 100%);
 	width: 1010px;
 	height: 10px;
 	margin-bottom: 50px;
@@ -134,14 +135,14 @@ section {
 }
 
 .onderste-dakplank {
-	background: #45291a;
+	background: linear-gradient(-180deg, #45291a 0%, #613a25 100%);
 	width: 1010px;
 	height: 17px;
 }
 
 /* Palen */
 .paal {
-	background: #dbd1bc;
+	background: linear-gradient(90deg, #dbd1bc 0%, #c9ba9b 100%);
 	width: 35px;
 	height: 350px;
 	position: absolute;

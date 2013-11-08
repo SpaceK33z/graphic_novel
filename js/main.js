@@ -99,7 +99,7 @@ $(function () {
     // Pannen leggen
     function acties_slide6() {
         console.log('Slide 6');
-        $('#slide5-wrapper').addClass('a6');
+        $('#slide6-wrapper').addClass('a6');
     }
 
     // Einde
