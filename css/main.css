@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .a4 .zaag .blad .afkapping {
-    background: linear-gradient(145deg, #D3F6F8 0%, #DBF7F4 100%);
+    background: linear-gradient(145deg, #D3F6F8 0%, #dbf7ec 100%);
     position: absolute;
     right: 0;
     top: -2px;
